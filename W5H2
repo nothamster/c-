@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace W5H
+{//111162037_姜如暄_1014 04-Homework2
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double celsius = 32,
+                fahrenheit;
+            fahrenheit = celsius * 9 / 5 + 32;
+            Console.WriteLine("original celsius = {0:F2}", celsius);
+            Console.WriteLine("original fahrenheit = {0:F2}", fahrenheit);
+            celsius = 0;
+            fahrenheit = celsius * 9 / 5 + 32;
+            Console.WriteLine("celsius = {0:F2}", celsius);
+            Console.WriteLine("fahrenheit = {0:F2}", fahrenheit);
+            celsius = 38;
+            fahrenheit = celsius * 9 / 5 + 32;
+            Console.WriteLine("celsius = {0:F2}", celsius);
+            Console.WriteLine("fahrenheit = {0:F2}", fahrenheit);
+            Console.Read();
+        }
+    }
+}
