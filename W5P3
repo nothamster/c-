@@ -1,0 +1,30 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace W5P
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int A = 100, myNumber = 37;
+            int result;
+            Console.WriteLine("A = {0:D}", A);
+            result = A + myNumber;
+            Console.WriteLine("result = {0:D}", result);
+            result = A - myNumber;
+            Console.WriteLine("result = {0:D}", result);
+            result = A * myNumber;
+            Console.WriteLine("result = {0:D}", result);
+            result = A / myNumber;
+            Console.WriteLine("result = {0:D}", result);
+            result = A % myNumber;
+            Console.WriteLine("result = {0:D}", result);
+            Console.Read();
+            
+        }
+    }
+}
