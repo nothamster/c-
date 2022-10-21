@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace W6P
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+           int examScore = 22;
+            char grade;
+            if(examScore>37)
+            {
+                grade = 'A';
+                Console.WriteLine("Congratulations -Great job!");
+            }
+            Console.WriteLine("I am displyed,whether the expression" + "evaluates true or fales");
+            Console.Read();
+
+        }
+    }
+}
