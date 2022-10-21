@@ -1,0 +1,49 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace W6H
+{
+    internal class Program
+    {//111162037_姜如暄_1021 05_Homework3
+        static void Main(string[] args)
+        {
+            double weight, height, BMI;
+            string inValueWeight, inValueHeight;
+            Console.Write("weight(kg): ");
+            inValueWeight = Console.ReadLine();
+            weight = Convert.ToDouble(inValueWeight);
+            Console.Write("height(m): ");
+            inValueHeight = Console.ReadLine();
+            height = Convert.ToDouble(inValueHeight);
+            BMI = weight / height / height;
+            if(BMI<18.5)
+            {
+                Console.WriteLine();
+                Console.WriteLine("Your BMI is {0:F2}", BMI);
+                Console.WriteLine("You are underweight!");
+            }
+            else if(BMI>=18.5&&BMI<25)
+            {
+                Console.WriteLine();
+                Console.WriteLine("Your BMI is {0:F2}", BMI);
+                Console.WriteLine("You are normal!");
+            }
+            else if (BMI >= 25 && BMI < 30)
+            {
+                Console.WriteLine();
+                Console.WriteLine("Your BMI is {0:F2}", BMI);
+                Console.WriteLine("You are overweight!");
+            }
+            else if (BMI >= 30)
+            {
+                Console.WriteLine();
+                Console.WriteLine("Your BMI is {0:F2}", BMI);
+                Console.WriteLine("You are obese!");
+            }
+            Console.Read();
+        }
+    }
+}
