@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace W6P
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            bool B;
+            B = (4 != (19 % 5));
+            Console.Read();//要設中斷點
+            bool B, c, d, e, f, g, h, i;
+            B = (6 == 6);
+            c = (8 > 5);
+            d = (1 < 2);
+            e = (5 > 3);
+            f = (5 >= 5);
+            g = (6 >= 7);
+            h = (100 != 101);
+            i = (100 != 100);
+            Console.WriteLine(B);
+            Console.WriteLine(c);
+            Console.WriteLine(d);
+            Console.WriteLine(e);
+            Console.WriteLine(f);
+            Console.WriteLine(g);
+            Console.WriteLine(h);
+            Console.WriteLine(i);
+            Console.Read();
+        }
+    }
+}
