@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace W7H
+{//111162037_姜如暄_1028 06_Homework2
+
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int pHLevel;
+            string inValuePH;
+            Console.Write("pH:");
+            inValuePH = Console.ReadLine();
+            pHLevel = Convert.ToInt32(inValuePH);
+
+            if (pHLevel > 7)
+            {
+                Console.WriteLine();
+                Console.WriteLine("alkaline");
+            }
+            else if (pHLevel==7)
+            {
+                Console.WriteLine();
+                Console.WriteLine("neutral");
+            }
+            else if (pHLevel<7)
+            {
+                Console.WriteLine();
+                Console.WriteLine("acidic");
+            }
+            
+            Console.Read();
+        }
+    }
+}
