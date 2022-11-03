@@ -1,0 +1,61 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace W7H
+{//111162037_姜如暄_1028 06_Homework1
+
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int average, math, english, physics, history, philosopy;
+            string inValueMath, inValueEnglish, inValuePhysics, inValueHistory, inValuePhilosopy;
+            Console.Write("math:");
+            inValueMath = Console.ReadLine();
+            math = Convert.ToInt32(inValueMath);
+            Console.Write("english:");
+            inValueEnglish = Console.ReadLine();
+            english = Convert.ToInt32(inValueEnglish);
+            Console.Write("physics:");
+            inValuePhysics = Console.ReadLine();
+            physics = Convert.ToInt32(inValuePhysics);
+            Console.Write("history:");
+            inValueHistory = Console.ReadLine();
+            history = Convert.ToInt32(inValueHistory);
+            Console.Write("philosophy:");
+            inValuePhilosopy = Console.ReadLine();
+            philosopy = Convert.ToInt32(inValuePhilosopy);
+            average = (math+english+physics+history+philosopy) / 5;
+
+            if (average > 89)
+            {
+                Console.WriteLine();
+                Console.WriteLine("A");
+            }
+            else if (average < 90 && average > 79)
+            {
+                Console.WriteLine();
+                Console.WriteLine("B");
+            }
+            else if (average < 80 && average > 69 )
+            {
+                Console.WriteLine();
+                Console.WriteLine("C");
+            }
+            else if (average < 70 && average > 59)
+            {
+                Console.WriteLine();
+                Console.WriteLine("D");
+            }
+            else if (average < 60)
+            {
+                Console.WriteLine();
+                Console.WriteLine("F");
+            }
+            Console.Read();
+        }
+    }
+}
