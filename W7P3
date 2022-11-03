@@ -1,0 +1,19 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace W7P
+{
+    internal class Program
+    {//111162037_姜如暄_1028 06_Practice3
+        static void Main(string[] args)
+        {
+            double charges, timeAtSite = 3.7;
+            charges = timeAtSite < 7.0 ? 100.00 : timeAtSite * 50.00;
+            Console.WriteLine(charges);
+            Console.Read();
+        }
+    }
+}
