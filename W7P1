@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace W7P
+{
+    internal class Program
+    {//111162037_姜如暄_1028 06_Practice1
+        static void Main(string[] args)
+        {
+            int houseWorked1 = 37, houseWorked2 = 77, payRate = 115;
+            double payAmount1, payAmount2;
+
+            if (houseWorked1 > 40)
+            {
+                payAmount1 = (houseWorked1 - 40) * payRate * 1.5 + payRate * 40;
+                Console.WriteLine("You worked {0} hours overtime.", houseWorked1 - 40);
+            }
+            else
+                payAmount1 = houseWorked1 * payRate;
+            if (houseWorked2 > 40)
+            {
+                payAmount2 = (houseWorked2 - 40) * payRate * 1.5 + payRate * 40;
+                Console.WriteLine("You worked {0} hours overtime.", houseWorked2 - 40);
+            }
+            else
+                payAmount2 = houseWorked2 * payRate;
+            Console.WriteLine("payAmount1 = {0}", payAmount1);
+            Console.WriteLine("payAmount2 = {0}", payAmount2);
+            Console.WriteLine("I am displayed, whether the expressionecalueates true or false");
+            Console.Read();
+        }
+    }
+}
