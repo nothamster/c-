@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace W7P
+{
+    internal class Program
+    {//111162037_姜如暄_1028 06_Practice2
+        static void Main(string[] args)
+        {
+            int weekDay;
+            string user_input;
+            Console.Write("please enter a number of a day...");
+            user_input = Console.ReadLine();
+            weekDay = int.Parse(user_input);
+
+            switch (weekDay)
+            {
+                case 1:
+                    Console.WriteLine("Monday");
+                    break;
+                case 2:
+                    Console.WriteLine("Tuesday");
+                    break;
+                case 3:
+                    Console.WriteLine("Wednesday");
+                    break;
+                case 4:
+                    Console.WriteLine("Thursday");
+                    break;
+                case 5:
+                    Console.WriteLine("Friday");
+                    break;
+                default:
+                    Console.WriteLine("Not Monday through Friday");
+                    break;
+
+            }
+            Console.Read();
+        }
+    }
+}
