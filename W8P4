@@ -1,0 +1,17 @@
+for(double d = 15.0; d < 20.0; d += 0.5)
+            {
+                Console.Write(d + "\t");
+            }
+            for (double d = 15.0; d < 20.0; d += 0.5)
+            {
+                Console.Write(d + "\t");
+                d += 2.0;
+            }
+            double endValue = 20.0;
+            for (double d = 15.0; d < 20.0; d += 0.5)
+            {
+                Console.Write(d + "\t");
+                d += 2;
+                endValue = 30;
+            }
+            Console.Read();
