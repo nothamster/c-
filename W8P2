@@ -1,0 +1,31 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace W8
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int sumA = 0, sumB = 0;
+            int numberA = 37, numberB = 1;
+            while (numberA <= 100)
+            {
+                sumA = sumA + numberA;
+                numberA++;
+            }
+            while (numberB <= 37)
+            {
+                sumB = sumB + numberB;
+                numberB++;
+            }
+            Console.WriteLine(sumA);
+            Console.WriteLine(sumB);
+            Console.Read();
+
+        }
+    }
+}
