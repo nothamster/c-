@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace W8
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int sum = 0;
+            int number = 1;
+            while (number < 38)
+            {
+                sum = sum + number;
+                number++;
+            }
+            Console.WriteLine("Sum of Values " + "1 through 37" + " is " + sum);
+            Console.Read();
+        }
+    }
+}
