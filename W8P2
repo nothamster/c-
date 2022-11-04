@@ -10,7 +10,7 @@ namespace W8
     {
         static void Main(string[] args)
         {
-            int sumA = 0, sumB = 0;
+            /*int sumA = 0, sumB = 0;
             int numberA = 37, numberB = 1;
             while (numberA <= 100)
             {
@@ -24,6 +24,24 @@ namespace W8
             }
             Console.WriteLine(sumA);
             Console.WriteLine(sumB);
+            Console.Read();*/
+            int sum = 0,sumA = 0, sumB = 0;
+            int startValue, endValue;
+            int numberA = 37, numberB = 1;
+            string inValue;
+            Console.Write("Enter the beginning value. ");
+            inValue = Console.ReadLine();
+            startValue = Convert.ToInt32(inValue);
+            Console.Write("Enter the last value. ");
+            inValue = Console.ReadLine();
+            endValue = Convert.ToInt32(inValue);
+            Console.Write("Sum of value {0} through {1}", startValue, endValue);
+            while (startValue < endValue + 1)
+            {
+                sum = sum + startValue;
+                startValue++;
+            }
+            Console.WriteLine("is {0}", sum);
             Console.Read();
 
         }
