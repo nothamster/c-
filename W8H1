@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace W8
+{
+    internal class Program//111162037_姜如暄_1104 07_Homework1
+    {
+        static void Main(string[] args)
+        {
+            for(int counter = 0, vall=10; counter < vall; counter++)
+            {
+                Console.WriteLine(counter);
+            }
+            int counter = 0;
+            for (; counter < 100; counter += 10)
+            {
+                Console.WriteLine(counter);
+            }
+            for(int j=0; ; j++)
+            {
+                Console.WriteLine(j);
+            }
+            for (int j=0,counter=0; j < 10; counter++, j += 3)
+            {
+                Console.WriteLine(counter);
+            }
+            for(int j = 0, k = 10,counter=0; j < 10 && k > 0; counter++, j += 3)
+            {
+                Console.WriteLine(counter);
+            }
+            for(double d = 15.0; d < 20.0; d += 0.5)
+            {
+                Console.WriteLine(d);
+            }
+            Console.Read();
+        }
+    }
+}
