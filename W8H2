@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace W8
 {
-    internal class Program//111162037_姜如暄_1104 07_Homework1
+    internal class Program//111162037_姜如暄_1104 07_Homework2
     {
         static void Main(string[] args)
         {
@@ -18,164 +18,173 @@ namespace W8
             Console.Write("Enter the last value. ");
             inValue2 = Console.ReadLine();
             endValue = Convert.ToInt32(inValue2);
-            Console.Write("n\t");
-            for(int n = startValue; n <= endValue; n++)
+            if (startValue < endValue && startValue > -2147483647 && endValue < 2147483647)
             {
-                Console.Write(n + "\t");
-                
+                Console.Write("n\t");
+                for (int n = startValue; n <= endValue; n++)
+                {
+                    Console.Write(n + "\t");
+
+                }
+                Console.WriteLine();
+                Console.WriteLine();
+                Console.Write("1\t");
+                for (int n = startValue; n <= endValue; n++)
+                {
+                    Console.Write(n + "\t");
+                }
+                Console.WriteLine();
+                Console.Write("2\t");
+                for (int n = startValue; n <= endValue; n++)
+                {
+                    Console.Write(n * 2 + "\t");
+                }
+                Console.WriteLine();
+                Console.Write("3\t");
+                for (int n = startValue; n <= endValue; n++)
+                {
+                    Console.Write(n * 3 + "\t");
+                }
+                Console.WriteLine();
+                Console.Write("4\t");
+                for (int n = startValue; n <= endValue; n++)
+                {
+                    Console.Write(n * 4 + "\t");
+                }
+                Console.WriteLine();
+                Console.Write("5\t");
+                for (int n = startValue; n <= endValue; n++)
+                {
+                    Console.Write(n * 5 + "\t");
+                }
+                Console.WriteLine();
+                Console.Write("6\t");
+                for (int n = startValue; n <= endValue; n++)
+                {
+                    Console.Write(n * 6 + "\t");
+                }
+                Console.WriteLine();
+                Console.Write("7\t");
+                for (int n = startValue; n <= endValue; n++)
+                {
+                    Console.Write(n * 7 + "\t");
+                }
+                Console.WriteLine();
+                Console.Write("8\t");
+                for (int n = startValue; n <= endValue; n++)
+                {
+                    Console.Write(n * 8 + "\t");
+                }
+                Console.WriteLine();
+                Console.Write("9\t");
+                for (int n = startValue; n <= endValue; n++)
+                {
+                    Console.Write(n * 9 + "\t");
+                }
+                Console.WriteLine();
+                Console.Write("10\t");
+                for (int n = startValue; n <= endValue; n++)
+                {
+                    Console.Write(n * 10 + "\t");
+                }
+                Console.WriteLine();
+                Console.Write("11\t");
+                for (int n = startValue; n <= endValue; n++)
+                {
+                    Console.Write(n * 11 + "\t");
+                }
+                Console.WriteLine();
+                Console.Write("12\t");
+                for (int n = startValue; n <= endValue; n++)
+                {
+                    Console.Write(n * 12 + "\t");
+                }
+                Console.WriteLine();
+                Console.Write("13\t");
+                for (int n = startValue; n <= endValue; n++)
+                {
+                    Console.Write(n * 13 + "\t");
+                }
+                Console.WriteLine();
+                Console.Write("14\t");
+                for (int n = startValue; n <= endValue; n++)
+                {
+                    Console.Write(n * 14 + "\t");
+                }
+                Console.WriteLine();
+                Console.Write("15\t");
+                for (int n = startValue; n <= endValue; n++)
+                {
+                    Console.Write(n * 15 + "\t");
+                }
+                Console.WriteLine();
+                Console.Write("16\t");
+                for (int n = startValue; n <= endValue; n++)
+                {
+                    Console.Write(n * 16 + "\t");
+                }
+                Console.WriteLine();
+                Console.Write("17\t");
+                for (int n = startValue; n <= endValue; n++)
+                {
+                    Console.Write(n * 17 + "\t");
+                }
+                Console.WriteLine();
+                Console.Write("18\t");
+                for (int n = startValue; n <= endValue; n++)
+                {
+                    Console.Write(n * 18 + "\t");
+                }
+                Console.WriteLine();
+                Console.Write("19\t");
+                for (int n = startValue; n <= endValue; n++)
+                {
+                    Console.Write(n * 19 + "\t");
+                }
+                Console.WriteLine();
+                Console.Write("20\t");
+                for (int n = startValue; n <= endValue; n++)
+                {
+                    Console.Write(n * 20 + "\t");
+                }
+                Console.WriteLine();
+                Console.Write("21\t");
+                for (int n = startValue; n <= endValue; n++)
+                {
+                    Console.Write(n * 21 + "\t");
+                }
+                Console.WriteLine();
+                Console.Write("22\t");
+                for (int n = startValue; n <= endValue; n++)
+                {
+                    Console.Write(n * 22 + "\t");
+                }
+                Console.WriteLine();
+                Console.Write("23\t");
+                for (int n = startValue; n <= endValue; n++)
+                {
+                    Console.Write(n * 23 + "\t");
+                }
+                Console.WriteLine();
+                Console.Write("24\t");
+                for (int n = startValue; n <= endValue; n++)
+                {
+                    Console.Write(n * 24 + "\t");
+                }
+                Console.WriteLine();
+                Console.Write("25\t");
+                for (int n = startValue; n <= endValue; n++)
+                {
+                    Console.Write(n * 25 + "\t");
+                }
+                Console.WriteLine();
             }
-            Console.WriteLine();
-            Console.WriteLine();
-            Console.Write("1\t");
-            for (int n = startValue; n <= endValue; n++)
+            else
             {
-                Console.Write(n + "\t");
+                Console.WriteLine();
+                Console.WriteLine("ERROR");
             }
-            Console.WriteLine();
-            Console.Write("2\t");
-            for (int n = startValue; n <= endValue; n++)
-            {
-                Console.Write(n*2 + "\t");
-            }
-            Console.WriteLine();
-            Console.Write("3\t");
-            for (int n = startValue; n <= endValue; n++)
-            {
-                Console.Write(n * 3 + "\t");
-            }
-            Console.WriteLine();
-            Console.Write("4\t");
-            for (int n = startValue; n <= endValue; n++)
-            {
-                Console.Write(n * 4 + "\t");
-            }
-            Console.WriteLine();
-            Console.Write("5\t");
-            for (int n = startValue; n <= endValue; n++)
-            {
-                Console.Write(n * 5 + "\t");
-            }
-            Console.WriteLine();
-            Console.Write("6\t");
-            for (int n = startValue; n <= endValue; n++)
-            {
-                Console.Write(n * 6 + "\t");
-            }
-            Console.WriteLine();
-            Console.Write("7\t");
-            for (int n = startValue; n <= endValue; n++)
-            {
-                Console.Write(n * 7 + "\t");
-            }
-            Console.WriteLine();
-            Console.Write("8\t");
-            for (int n = startValue; n <= endValue; n++)
-            {
-                Console.Write(n * 8 + "\t");
-            }
-            Console.WriteLine();
-            Console.Write("9\t");
-            for (int n = startValue; n <= endValue; n++)
-            {
-                Console.Write(n * 9 + "\t");
-            }
-            Console.WriteLine();
-            Console.Write("10\t");
-            for (int n = startValue; n <= endValue; n++)
-            {
-                Console.Write(n * 10 + "\t");
-            }
-            Console.WriteLine();
-            Console.Write("11\t");
-            for (int n = startValue; n <= endValue; n++)
-            {
-                Console.Write(n * 11 + "\t");
-            }
-            Console.WriteLine();
-            Console.Write("12\t");
-            for (int n = startValue; n <= endValue; n++)
-            {
-                Console.Write(n * 12 + "\t");
-            }
-            Console.WriteLine();
-            Console.Write("13\t");
-            for (int n = startValue; n <= endValue; n++)
-            {
-                Console.Write(n * 13 + "\t");
-            }
-            Console.WriteLine();
-            Console.Write("14\t");
-            for (int n = startValue; n <= endValue; n++)
-            {
-                Console.Write(n * 14 + "\t");
-            }
-            Console.WriteLine();
-            Console.Write("15\t");
-            for (int n = startValue; n <= endValue; n++)
-            {
-                Console.Write(n * 15 + "\t");
-            }
-            Console.WriteLine();
-            Console.Write("16\t");
-            for (int n = startValue; n <= endValue; n++)
-            {
-                Console.Write(n * 16 + "\t");
-            }
-            Console.WriteLine();
-            Console.Write("17\t");
-            for (int n = startValue; n <= endValue; n++)
-            {
-                Console.Write(n * 17 + "\t");
-            }
-            Console.WriteLine();
-            Console.Write("18\t");
-            for (int n = startValue; n <= endValue; n++)
-            {
-                Console.Write(n * 18 + "\t");
-            }
-            Console.WriteLine();
-            Console.Write("19\t");
-            for (int n = startValue; n <= endValue; n++)
-            {
-                Console.Write(n * 19 + "\t");
-            }
-            Console.WriteLine();
-            Console.Write("20\t");
-            for (int n = startValue; n <= endValue; n++)
-            {
-                Console.Write(n * 20 + "\t");
-            }
-            Console.WriteLine();
-            Console.Write("21\t");
-            for (int n = startValue; n <= endValue; n++)
-            {
-                Console.Write(n * 21 + "\t");
-            }
-            Console.WriteLine();
-            Console.Write("22\t");
-            for (int n = startValue; n <= endValue; n++)
-            {
-                Console.Write(n * 22 + "\t");
-            }
-            Console.WriteLine();
-            Console.Write("23\t");
-            for (int n = startValue; n <= endValue; n++)
-            {
-                Console.Write(n * 23 + "\t");
-            }
-            Console.WriteLine();
-            Console.Write("24\t");
-            for (int n = startValue; n <= endValue; n++)
-            {
-                Console.Write(n * 24 + "\t");
-            }
-            Console.WriteLine();
-            Console.Write("25\t");
-            for (int n = startValue; n <= endValue; n++)
-            {
-                Console.Write(n * 25 + "\t");
-            }
-            Console.WriteLine();
+            
             Console.Read();
 
         }
