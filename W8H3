@@ -1,0 +1,48 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace W8
+{
+    internal class Program//111162037_姜如暄_1104 07_Homework3
+    {
+        static void Main(string[] args)
+        {
+            string inValue1=" ";
+            int startValue, valid = 0, inValid = 0;
+            do
+            {
+                Console.Write("Enter the value. ");
+                inValue1 = Console.ReadLine();
+
+                if (!inValue1.ToUpper().Equals("Q"))
+                {
+                    int number = 0;
+                    if (int.TryParse(inValue1, out number))
+                    {
+                        if (number >= 0 && number < 100)
+                        {
+                            valid++;
+                        }
+                        else
+                        {
+                            inValid++;
+                        }
+                    }
+                    else
+                        inValid++;
+                }
+
+            }
+            while (!inValue1.ToUpper().Equals("Q"));
+            
+            
+            Console.WriteLine("Valid:{0}", valid);
+            Console.WriteLine("Invalid:{0}", inValid);
+            Console.Read();
+
+        }
+    }
+}
