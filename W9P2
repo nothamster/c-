@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace W9
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            for(int outer = 2; outer < 10; outer++)
+            {
+                for (int inner = 2 ; inner < 10; inner++)
+                {
+                    Console.Write("{0}x{1}=", outer, inner);
+                    Console.Write(outer * inner);
+                    Console.Write("\t");
+                }
+                Console.WriteLine();
+            }
+            Console.Read();
+        }
+    }
+}
