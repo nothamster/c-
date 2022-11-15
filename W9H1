@@ -32,7 +32,7 @@ namespace W9
                     }
                     for (; size > 0; size--)
                     {
-                        Console.WriteLine(new string(character, size));
+                        Console.WriteLine(new string(character, size - 1));
                     }
                 }
                 else
@@ -43,7 +43,7 @@ namespace W9
                     }
                     for (; size > 0; size--)
                     {
-                        Console.WriteLine(new string('*', size));
+                        Console.WriteLine(new string('*', size - 1));
                     }
                 }
                 
@@ -61,7 +61,7 @@ namespace W9
                     }
                     for (int i = 3; i > 0; i--)
                     {
-                        Console.WriteLine(new string(character, i));
+                        Console.WriteLine(new string(character, i - 1));
                     }
                 }
                 else
@@ -72,7 +72,7 @@ namespace W9
                     }
                     for (; size > 0; size--)
                     {
-                        Console.WriteLine(new string('*', size));
+                        Console.WriteLine(new string('*', size - 1));
                     }
                 }
 
