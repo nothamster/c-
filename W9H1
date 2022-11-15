@@ -1,0 +1,83 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace W9
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+           int size;
+            string inValue2,inValue1;
+            char character ;
+            Console.Write("Enter the size of triangle ");
+            inValue1 = Console.ReadLine();
+            Console.Write("Enter the character ");
+            inValue2 = Console.ReadLine();
+            size = Convert.ToInt32(inValue1);
+            
+
+            if (size <= 10)
+            {
+                char number;
+                if (char.TryParse(inValue2, out number)) 
+                {
+                    character = Convert.ToChar(inValue2);
+                    for (int i = 0; i < size; i++)
+                    {
+                        Console.WriteLine(new string(character, i + 1));
+                    }
+                    for (; size > 0; size--)
+                    {
+                        Console.WriteLine(new string(character, size));
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < size; i++)
+                    {
+                        Console.WriteLine(new string('*', i + 1));
+                    }
+                    for (; size > 0; size--)
+                    {
+                        Console.WriteLine(new string('*', size));
+                    }
+                }
+                
+                
+            }
+            else
+            {
+                character = '*';
+                char number;
+                if (char.TryParse(inValue2, out number))
+                {
+                    for (int i = 0; i < 3; i++)
+                    {
+                        Console.WriteLine(new string(character, i + 1));
+                    }
+                    for (int i = 3; i > 0; i--)
+                    {
+                        Console.WriteLine(new string(character, i));
+                    }
+                }
+                else
+                {
+                    for (int i = 0; i < size; i++)
+                    {
+                        Console.WriteLine(new string('*', i + 1));
+                    }
+                    for (; size > 0; size--)
+                    {
+                        Console.WriteLine(new string('*', size));
+                    }
+                }
+
+            }
+            Console.Read();
+        }
+    }
+}
