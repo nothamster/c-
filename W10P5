@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _10
+{
+    internal class Program
+    {
+        
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("ok.\n");
+            Console.WriteLine("Miles per gallon = {0:N2}", CalculateMilesPerGallon_37(289, 12.2));
+            DisplayMessage();
+            Console.WriteLine();
+            myImformation();
+            Console.Read();
+        }
+        public static double CalculateMilesPerGallon_37(int milesTravel,double gallonsUsed)
+        {
+            return milesTravel / gallonsUsed;
+        }
+        public static void DisplayMessage()
+        {
+            Console.Write("This is");
+            Console.Write("an example of a method");
+            Console.Write("body.");
+            return;
+        }
+        public static void myImformation()
+        {
+            Console.Write("姜如暄");
+            Console.Write(" 37");
+            Console.Write(" Dance");
+            return;
+        }
+    }
+}
