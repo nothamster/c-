@@ -1,0 +1,23 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _10
+{
+    internal class Program
+    {
+        
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("ok.\n");
+            Console.WriteLine("Miles per gallon = {0:N2}", CalculateMilesPerGallon_37(289, 12.2));
+            Console.Read();
+        }
+        public static double CalculateMilesPerGallon_37(int milesTravel,double gallonsUsed)
+        {
+            return milesTravel / gallonsUsed;
+        }
+    }
+}
