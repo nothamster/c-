@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _10
+{
+    internal class Program
+    {
+        static void tieMyShoe(string owner)
+        {
+            Console.WriteLine("looping..." + owner + "shoe.");
+            Console.WriteLine("swooping..." + owner + "shoe.");
+            Console.WriteLine("pulling..." + owner + "shoe.");
+        }
+        static void Main(string[] args)
+        {
+            tieMyShoe("Peter");
+            tieMyShoe("Jack");
+            tieMyShoe("姜如暄");
+            Console.Read();
+        }
+    }
+}
