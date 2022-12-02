@@ -1,0 +1,25 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _10
+{
+    internal class Program
+    {
+        static void tieMyShoe()
+        {
+            Console.WriteLine("looping...");
+            Console.WriteLine("swooping...");
+            Console.WriteLine("pulling...");
+        }
+        static void Main(string[] args)
+        {
+            tieMyShoe();
+            tieMyShoe();
+            tieMyShoe();
+            Console.Read();
+        }
+    }
+}
