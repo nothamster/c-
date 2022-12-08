@@ -1,0 +1,41 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _10
+{
+    internal class Program
+    {
+        //111162037_姜如暄_1202 10_Homework1
+        public static void Main(string[] args)
+        {
+            int age, a, b, c;
+            string aValue, valueA, valueB, valueC;
+
+            Console.Write("Value 1: ");
+            valueA = Console.ReadLine();
+            a = int.Parse(valueA);
+            Console.Write("Value 2: ");
+            valueB = Console.ReadLine();
+            b = int.Parse(valueB);
+            Console.Write("Value 3: ");
+            valueC = Console.ReadLine();
+            c = int.Parse(valueC);
+            if (a <= b && a <= c)
+            {
+                Console.WriteLine(a);
+            }
+            else if (b <= a && b <= c)
+            {
+                Console.WriteLine(b);
+            }
+            else
+                Console.WriteLine(c);
+
+            Console.Read();
+        }
+        
+    }
+}
