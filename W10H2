@@ -1,0 +1,34 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace _10
+{
+    internal class Program
+    {
+        //111162037_姜如暄_1202 10_Homework2
+        public static void Main(string[] args)
+        {
+            string sayings;
+            add(Sayings());
+            Console.Read();
+        }
+        public static string Sayings()
+        {
+            string theSayings;
+            Console.Write("Your favorite sayings : ");
+            theSayings = Console.ReadLine();
+            return theSayings;
+        }
+        public static void add(string phrase)
+        {
+            Console.WriteLine("****************************************************");
+            Console.WriteLine("****************************************************");
+            Console.WriteLine(phrase);
+            Console.WriteLine("****************************************************");
+            Console.WriteLine("****************************************************");
+        }
+    }
+}
