@@ -1,0 +1,44 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace W11
+{
+    internal class Program
+    {//111162037_姜如暄_1216 11_Practice8
+        static void Main(string[] args)
+        {
+            int testValue = 1;
+            Console.WriteLine("Original Value: {0}", testValue);
+            TestDefault(testValue);
+
+            Console.WriteLine();
+            Console.WriteLine("Original Value: {0}", testValue);
+            TestRef(ref testValue);
+            Console.WriteLine("Upon return from TestRef Value {0}", testValue);
+
+            Console.WriteLine();
+            int testValue2;
+            TestOut(out testValue2);
+            Console.WriteLine("Upon return from TestRef Value {0}", testValue2);
+            Console.Read();
+        }
+        public static void TestDefault(int aValue)
+        {
+            aValue = 111;
+            Console.WriteLine("In TestDefault - Value: {0}", aValue);
+        }
+        public static void TestRef(ref int aValue)
+        {
+            aValue = 333;
+            Console.WriteLine("In TestDefault - Value: {0}", aValue);
+        }
+        public static void TestOut(out int aValue)
+        {
+            aValue = 222;
+            Console.WriteLine("In TestDefault - Value: {0}", aValue);
+        }
+    }
+}
