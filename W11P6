@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace W11
+{
+    internal class Program
+    {//111162037_姜如暄_1216 11_Practice6
+        static void Main(string[] args)
+        {
+            int testValue = 1;
+            Console.WriteLine("Original Value: {0}", testValue);
+            TestDefault(testValue);
+            Console.Read();
+        }
+        public static void TestDefault(int aValue)
+        {
+            aValue = 111;
+            Console.WriteLine("In TestDefault - Value: {0}", aValue);
+        }
+    }
+}
