@@ -1,0 +1,28 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace W11
+{
+    internal class Program
+    {//111162037_姜如暄_1216 11_Practice9
+        static void Main(string[] args)
+        {
+            DoSomething("Elizabeth Abbott", 20);
+            DoSomething("James Gabriel");
+            DoSomething("Jonathan Byrle", 25, false, "MS");
+
+            DoSomething(name: "Robert Wiser", age: 20);
+            DoSomething("Elizabeth Abbott", 20);
+            DoSomething(name: "Paul Nelson", major: "BIO");
+            DoSomething(name: "Fredrick Terrell", age: 25, major: "MS");
+            Console.Read();
+        }
+        public static void DoSomething(string name,int age=21,bool currentStudent=true,string major = "CS")
+        {
+            Console.WriteLine("DoSomething is called");
+        }
+    }
+}
