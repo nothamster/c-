@@ -1,0 +1,52 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace W11
+{
+    internal class Program
+    {//111162037_姜如暄_1216 11_Practice3
+        static void Main(string[] args)
+        {
+            double roomWidth;
+            double roomLenghth;
+            double pricePerSquareYard;
+            double noOfSquareYard;
+            DisplayInstruction();
+            DisplayResults(16.5, 18.95);
+            roomLenghth = GetLength();
+            
+            Console.Read();
+        }
+        public static void DisplayInstruction()
+        {
+            Console.WriteLine("This program will determine how much carpet to purchase.");
+            Console.WriteLine();
+            Console.WriteLine("You will be asked to enter the size of the room and");
+            Console.WriteLine("the price of the carpet, in price per square yards.");
+            Console.WriteLine();
+        }
+        public static void DisplayResults(double squareYards,double pricePerSquareYard)
+        {
+            Console.Write("Total Squre Yard needed; ");
+            Console.WriteLine("{0:N2}", squareYards);
+            Console.Write("Total Cost at {0:c}", pricePerSquareYard);
+            Console.WriteLine(" per Square Yard:{0:c}", (squareYards * pricePerSquareYard));
+        }
+        public static double GetLength()
+        {
+            string inputValue;
+            int feet, inches;
+            Console.Write("Enter the lenghth in feet: ");
+            inputValue = Console.ReadLine();
+            feet = int.Parse(inputValue);
+            Console.Write("Enter the Lenghth in inches: ");
+            inputValue = Console.ReadLine();
+            inches = int.Parse(inputValue);
+            return (feet + (double)inches / 12);
+        }
+        
+    }
+}
