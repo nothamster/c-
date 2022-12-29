@@ -25,9 +25,7 @@ namespace _10
         public static void add(string phrase)
         {
             Console.WriteLine("****************************************************");
-            Console.WriteLine("****************************************************");
             Console.WriteLine(phrase);
-            Console.WriteLine("****************************************************");
             Console.WriteLine("****************************************************");
         }
     }
