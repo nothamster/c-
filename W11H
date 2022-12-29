@@ -1,0 +1,65 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace W11
+{
+    internal class Program
+    {//111162037_姜如暄_1216 11_Homework
+        static void Main(string[] args)
+        {
+            double total, beforeTax, tip, totalCost, fifteen, twenty;
+            total = GetTotal();
+            beforeTax = GetBeforeTax();
+            fifteen = total * 1.15;
+            twenty = total * 1.20;
+            Console.WriteLine("Tip: 15% = {0}   20% = {1}", fifteen, twenty);
+            tip = GetTip();
+            totalCost = total * tip;
+            Console.WriteLine();
+            Console.WriteLine("Total cost is :{0}", totalCost);
+            Console.Read();
+        }
+        public static double GetTotal()
+        {
+            string inputValue;
+            double total;
+            Console.Write("Enter the total: ");
+            inputValue = Console.ReadLine();
+            total = double.Parse(inputValue);
+            return (total);
+        }
+        public static double GetBeforeTax()
+        {
+            string inputValue;
+            double beforeTax;
+            Console.Write("Enter the before tax: ");
+            inputValue = Console.ReadLine();
+            beforeTax = double.Parse(inputValue);
+            return (beforeTax);
+        }
+        public static double GetTip()
+        {
+            string inputValue;
+            int tip;
+            Console.WriteLine("Which tip percentage you want to choose ? \n1. 15% \n2. 20% ");
+            Console.WriteLine();
+            inputValue = Console.ReadLine();
+            tip = int.Parse(inputValue);
+            if (tip <= 1)
+            {
+                double fifteen = 1.15;
+                return (fifteen);
+            }
+            else
+            {
+                double twenty = 1.20;
+                return (twenty);
+            }
+            
+        }
+
+    }
+}
