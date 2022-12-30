@@ -1,0 +1,164 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+//111162037_姜如暄
+namespace myFirstProgram
+{
+    internal class Program
+    {
+        static void Main()
+                           
+        {
+            /*string value1, value2, value3, value4;
+            int number1, number2, number3, number4;
+            Console.Write("Number 1:");
+            value1 = Console.ReadLine();
+            number1 = int.Parse(value1);
+            Console.Write("Number 1:");
+            value2 = Console.ReadLine();
+            number2 = int.Parse(value2);
+            Console.Write("Number 1:");
+            value3 = Console.ReadLine();
+            number3 = int.Parse(value3);
+            Console.Write("Number 1:");
+            value4 = Console.ReadLine();
+            number4 = int.Parse(value4);
+            if(number1== number2 || number1 == number3 || number1 == number4 || number2 == number3 || number2 == number4 || number3 == number4)
+            {
+                Console.WriteLine("there are the same value");
+            }
+            if (number1 < number2 && number1 < number3 && number1 < number4)
+            {
+                Console.WriteLine(number1);
+            }
+            else if (number1 > number2 && number2 < number3 && number2 < number4)
+            {
+                Console.WriteLine(number2);
+            }
+            else if (number3 < number1 && number3 < number2 && number3 < number4)
+            {
+                Console.WriteLine(number3);
+            }
+            else if (number4 < number1 && number4 < number2 && number4 < number3)
+            {
+                Console.WriteLine(number4);
+            }
+            Console.Read(); */
+            /*for(int startValue = 12; startValue <= 30; startValue = startValue + 2)
+            {
+                Console.WriteLine(startValue);
+            }*/
+
+            
+            string studentID, exam1, exam2, exam3;
+            double score1, score2, score3, average1;
+            int number1, number2, number3;
+            Console.Write("student ID:");
+            studentID = Console.ReadLine();
+            Console.Write("score 1:");
+            exam1 = Console.ReadLine();
+            score1 = double.Parse(exam1);
+            Console.Write("score 2:");
+            exam2 = Console.ReadLine();
+            score2 = double.Parse(exam2);
+            Console.Write("score 3:");
+            exam3 = Console.ReadLine();
+            score3 = double.Parse(exam3);
+            average1 = (score1 + score2 + score3) / 3;
+            returnAvaerage(score1, score2, score3);
+            printAll(score1, score2, score3, average1);
+            enterAll();
+            Console.Read();
+            /*double width, height;
+            width = enterWidth();
+            height = enterHeight();
+            putperimeter(width, height);
+            outputperimeter(width,height);
+            Console.Read();*/
+
+        }
+        /*public static double enterWidth()
+        {
+            string widthValue, heightValue;
+            double width, height;
+            Console.Write("width:");
+            widthValue = Console.ReadLine();
+            width = double.Parse(widthValue);
+            
+            return width;
+            
+        }
+        public static double enterHeight()
+        {
+            string widthValue, heightValue;
+            double width, height;
+            
+            Console.Write("height:");
+            heightValue = Console.ReadLine();
+            height = double.Parse(heightValue);
+            
+            return height;
+        }
+        public static void putperimeter(double width, double height)
+        {
+            double perimeter;
+            perimeter = (width + height) * 2;
+            Console.WriteLine("({0} + {1}) * 2={2}", width,height,perimeter);
+        }
+        public static void outputperimeter(double width,double height)
+        {
+            double perimeter;
+            perimeter = (width + height) * 2;
+            Console.WriteLine("perimeter is {0}", perimeter);
+        }*/
+        public static void returnAvaerage(double value1,double value2,double value3)
+        {
+            double average;
+            average = (value1 + value2 + value3) / 3;
+            Console.WriteLine(average);
+        }
+
+        public static void printAll(double value1, double value2, double value3,double average)
+        {
+            int number1, number2, number3, average1;
+            number1 = Convert.ToInt32(value1);
+            number2 = Convert.ToInt32(value2);
+            number3 = Convert.ToInt32(value3);
+            average1 = Convert.ToInt32(average);
+            Console.WriteLine("score 1:{0}", number1);
+            Console.WriteLine("score 2:{0}", number2);
+            Console.WriteLine("score 3:{0}", number3);
+            Console.WriteLine("average:{0}", average1);
+        }
+        public static void enterAll()
+        {
+            string studentID, exam1, exam2, exam3,average;
+            double score1, score2, score3, average1;
+            int number1, number2, number3;
+            Console.Write("student ID:");
+            studentID = Console.ReadLine();
+            Console.Write("score 1:");
+            exam1 = Console.ReadLine();
+            Console.Write("score 2:");
+            exam2 = Console.ReadLine();
+            Console.Write("score 3:");
+            exam3 = Console.ReadLine();
+            Console.Write("average:");
+            average = Console.ReadLine();
+            Console.Write("score 1(with no digits to the right of the decimal):");
+            exam1 = Console.ReadLine();
+            Console.Write("score 2(with no digits to the right of the decimal):");
+            exam2 = Console.ReadLine();
+            Console.Write("score 3(with no digits to the right of the decimal):");
+            exam3 = Console.ReadLine();
+            Console.Write("average(with no digits to the right of the decimal):");
+            average = Console.ReadLine();
+            return;
+        }
+
+
+
+    }
+}
